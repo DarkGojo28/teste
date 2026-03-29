@@ -1,100 +1,83 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ChevronDown } from 'lucide-react';
-
-const faqs = [
-  {
-    question: "Is this a physical book or a digital download?",
-    answer: "Somnia is a digital ebook available in PDF and ePub formats. You'll get instant access to download it immediately after purchase, so you can start your journey to better sleep tonight."
-  },
-  {
-    question: "Do I need to buy any expensive supplements or equipment?",
-    answer: "No. Our philosophy is built on natural, biological triggers. While we suggest some minor environment optimizations (like blackout curtains), the core of the program requires zero additional purchases."
-  },
-  {
-    question: "How soon can I expect to see results?",
-    answer: "Most users report a significant improvement in their ability to fall asleep within the first 3-5 nights of implementing the 10-minute routine. Long-term habits like CBT-I techniques typically take 2-3 weeks to fully solidify."
-  },
-  {
-    question: "Is there a money-back guarantee?",
-    answer: "Yes! We're so confident in the Somnia blueprint that we offer a 30-day, no-questions-asked money-back guarantee. If you don't feel more rested, just email our support team for a full refund."
-  },
-  {
-    question: "Can I use these techniques if I work night shifts?",
-    answer: "Absolutely. While the guide uses 'night' as the default, the biological principles apply to any sleep-wake cycle. We include a specific section on adjusting the routine for shift workers."
-  }
-];
-
-interface FAQItemProps {
-  question: string;
-  answer: string;
-  isOpen: boolean;
-  onClick: () => void;
-}
-
-const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onClick }) => {
-  return (
-    <div className="border-b border-white/5 last:border-0">
-      <button
-        onClick={onClick}
-        className="w-full py-6 flex items-center justify-between text-left hover:text-indigo-400 transition-colors group"
-      >
-        <span className="text-lg font-bold pr-8">{question}</span>
-        <ChevronDown className={`w-5 h-5 shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-indigo-400' : 'text-slate-500'}`} />
-      </button>
-      <AnimatePresence initial={false}>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
-            className="overflow-hidden"
-          >
-            <div className="pb-6 text-slate-400 leading-relaxed">
-              {answer}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  );
-};
+import { Plus, Minus, HelpCircle } from 'lucide-react';
 
 export const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  return (
-    <section id="faq" className="py-24 bg-[#080A0F]/50">
-      <div className="max-w-3xl mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">Common Questions</h2>
-          <p className="text-slate-400">Everything you need to know about the Somnia sleep program.</p>
-        </motion.div>
+  const faqs = [
+    {
+      q: "Como recebo o acesso ao ebook?",
+      a: "O acesso é imediato! Assim que seu pagamento for confirmado, você receberá um e-mail com o link para download do ebook e todos os bônus exclusivos em formato PDF, compatível com qualquer dispositivo."
+    },
+    {
+      q: "O método funciona para quem tem insônia há anos?",
+      a: "Sim! O Somnia é baseado no TCC-I (Terapia Cognitivo-Comportamental para Insônia), que é o padrão-ouro da medicina do sono para casos crônicos. Ele ataca a causa biológica, não apenas os sintomas."
+    },
+    {
+      q: "E se eu não gostar do conteúdo?",
+      a: "Você tem 7 dias de garantia incondicional. Se por qualquer motivo você sentir que o Somnia não é para você, basta nos enviar um e-mail e devolveremos 100% do seu investimento, sem perguntas."
+    },
+    {
+      q: "Preciso comprar algum medicamento ou suplemento?",
+      a: "Não. O foco do Somnia é o reequilíbrio natural do seu ciclo circadiano através de mudanças comportamentais e ambientais. Ensinamos como usar a biologia do seu próprio corpo a seu favor."
+    }
+  ];
 
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="glass rounded-[32px] p-8 md:p-12"
-        >
+  return (
+    <section id="faq" className="py-24 relative overflow-hidden">
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex justify-center mb-4">
+              <HelpCircle className="w-12 h-12 text-gold opacity-50" />
+            </div>
+            <h2 className="text-4xl font-display font-bold mb-4">Dúvidas Frequentes</h2>
+            <p className="text-slate-400">Tudo o que você precisa saber antes de começar sua jornada.</p>
+          </motion.div>
+        </div>
+
+        <div className="space-y-4">
           {faqs.map((faq, i) => (
-            <FAQItem
+            <motion.div
               key={i}
-              question={faq.question}
-              answer={faq.answer}
-              isOpen={openIndex === i}
-              onClick={() => setOpenIndex(openIndex === i ? null : i)}
-            />
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 }}
+              viewport={{ once: true }}
+              className="glass rounded-3xl border-white/5 overflow-hidden"
+            >
+              <button
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                className="w-full p-6 text-left flex items-center justify-between hover:bg-white/5 transition-all"
+              >
+                <span className="text-lg font-bold text-white pr-8">{faq.q}</span>
+                <div className="shrink-0 w-8 h-8 rounded-full bg-soft-purple/10 flex items-center justify-center text-soft-purple">
+                  {openIndex === i ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
+                </div>
+              </button>
+              
+              <AnimatePresence>
+                {openIndex === i && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: 'auto', opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.3, ease: 'easeInOut' }}
+                  >
+                    <div className="px-6 pb-6 text-slate-400 leading-relaxed text-sm">
+                      {faq.a}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

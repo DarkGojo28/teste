@@ -3,59 +3,41 @@ import { motion } from "motion/react";
 
 const testimonials: Testimonial[] = [
   {
-    text: "I used to spend hours staring at the ceiling. Somnia's 10-minute routine changed everything. I'm finally sleeping like a baby.",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop",
-    name: "Briana Patton",
-    role: "Graphic Designer",
+    text: "Eu costumava passar horas olhando para o teto. A rotina de 10 minutos do Somnia mudou tudo. Finalmente durmo como um bebê.",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop",
+    name: "Mariana Costa",
+    role: "Designer Gráfica",
   },
   {
-    text: "The science-backed approach is what sold me. No gimmicks, just real techniques that work for chronic insomniacs like me.",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop",
-    name: "Bilal Ahmed",
-    role: "Software Engineer",
+    text: "A abordagem baseada em ciência foi o que me convenceu. Sem truques, apenas técnicas reais que funcionam para insônia crônica.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop",
+    name: "Ricardo Mendes",
+    role: "Engenheiro de Software",
   },
   {
-    text: "Waking up refreshed is a feeling I hadn't experienced in years. This ebook is worth every penny and more.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop",
-    name: "Saman Malik",
-    role: "Marketing Executive",
+    text: "Acordar revigorada é uma sensação que eu não experimentava há anos. Este ebook vale cada centavo e muito mais.",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop",
+    name: "Juliana Silva",
+    role: "Executiva de Marketing",
   },
   {
-    text: "The environment audit was eye-opening. Small changes to my bedroom made a massive difference in my sleep quality.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop",
-    name: "Omar Raza",
-    role: "Business Owner",
+    text: "A auditoria do ambiente foi reveladora. Pequenas mudanças no meu quarto fizeram uma diferença enorme na qualidade do sono.",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop",
+    name: "Carlos Eduardo",
+    role: "Empresário",
   },
   {
-    text: "I was skeptical about CBT-I at home, but the guide makes it so simple to follow. My sleep efficiency has improved by 40%.",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop",
-    name: "Zainab Hussain",
-    role: "Project Manager",
+    text: "Eu era cético sobre o TCC-I em casa, mas o guia torna tudo simples de seguir. Minha eficiência de sono melhorou 40%.",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop",
+    name: "Ana Paula",
+    role: "Gerente de Projetos",
   },
   {
-    text: "Finally, a guide that doesn't just tell you to 'relax'. It gives you the biological tools to actually trigger sleep.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop",
-    name: "Aliza Khan",
-    role: "Data Analyst",
-  },
-  {
-    text: "The dietary hacks were a game changer. I didn't realize my 'healthy' evening snack was keeping me awake!",
-    image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=80&h=80&fit=crop",
-    name: "Farhan Siddiqui",
-    role: "Content Creator",
-  },
-  {
-    text: "Somnia is the first thing that actually worked for my 3 AM wake-ups. The mind-calming techniques are incredible.",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop",
-    name: "Sana Sheikh",
-    role: "Teacher",
-  },
-  {
-    text: "I've tried every pill and tea out there. Nothing compares to the natural, sustainable methods in this guide.",
-    image: "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=80&h=80&fit=crop",
-    name: "Hassan Ali",
-    role: "Fitness Coach",
-  },
+    text: "Finalmente, um guia que não diz apenas para 'relaxar'. Ele te dá as ferramentas biológicas para realmente disparar o sono.",
+    image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=150&h=150&fit=crop",
+    name: "Beatriz Oliveira",
+    role: "Analista de Dados",
+  }
 ];
 
 export const Testimonials = () => {
@@ -70,16 +52,16 @@ export const Testimonials = () => {
           className="flex flex-col items-center justify-center max-w-[540px] mx-auto text-center mb-16"
         >
           <div className="flex justify-center">
-            <div className="border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 py-1 px-4 rounded-full text-xs font-bold tracking-widest uppercase">
-              Testimonials
+            <div className="border border-soft-purple/30 bg-soft-purple/10 text-soft-purple py-1 px-4 rounded-full text-xs font-bold tracking-widest uppercase">
+              Depoimentos
             </div>
           </div>
 
-          <h2 className="text-3xl md:text-5xl font-serif font-bold tracking-tight mt-5 text-white">
-            What our users say
+          <h2 className="text-3xl md:text-5xl font-display font-bold tracking-tight mt-5 text-white">
+            O que dizem nossos alunos
           </h2>
           <p className="text-center mt-5 text-slate-400">
-            Join thousands of people who have reclaimed their nights and transformed their lives with Somnia.
+            Junte-se a milhares de pessoas que recuperaram suas noites e transformaram suas vidas com o Somnia.
           </p>
         </motion.div>
       </div>

@@ -1,14 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Playfair Display", serif;
+  --font-display: "Poppins", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  
+  --color-night-blue: #0F172A;
+  --color-soft-purple: #7C3AED;
+  --color-gold: #F59E0B;
+  --color-conversion: #10B981;
 }
 
 @layer base {
   body {
-    @apply bg-[#05070A] text-slate-200 antialiased selection:bg-indigo-500/30;
+    @apply bg-night-blue text-slate-200 antialiased selection:bg-soft-purple/30 font-body;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
   }
   
   section {
@@ -25,10 +35,14 @@
   @apply bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60;
 }
 
-.glow-blue {
-  box-shadow: 0 0 80px -10px rgba(59, 130, 246, 0.2);
+.glow-purple {
+  box-shadow: 0 0 80px -10px rgba(124, 58, 237, 0.3);
 }
 
-.glow-purple {
-  box-shadow: 0 0 80px -10px rgba(168, 85, 247, 0.2);
+.glow-gold {
+  box-shadow: 0 0 80px -10px rgba(245, 158, 11, 0.2);
+}
+
+.glow-green {
+  box-shadow: 0 0 40px -5px rgba(16, 185, 129, 0.4);
 }

@@ -1,0 +1,119 @@
+import { motion } from 'motion/react';
+import { CheckCircle2, ShieldCheck, CreditCard, Lock, Zap } from 'lucide-react';
+
+export const Offer = () => {
+  const bonuses = [
+    { title: "Bônus 1: Auditoria do Ambiente de Sono", value: "R$ 97,00", desc: "Transforme seu quarto em um santuário de descanso profundo." },
+    { title: "Bônus 2: Hacks Alimentares para o Sono", value: "R$ 47,00", desc: "O que comer (e evitar) para disparar a melatonina natural." },
+    { title: "Bônus 3: Rotina Noturna de 10 Minutos", value: "R$ 67,00", desc: "O passo a passo exato para desligar o cérebro em minutos." }
+  ];
+
+  return (
+    <section id="offer" className="py-24 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <span className="text-gold font-bold uppercase tracking-widest text-sm">Oferta Exclusiva</span>
+            <h2 className="text-4xl md:text-6xl font-display font-bold mt-4 mb-6">Recupere suas noites hoje</h2>
+            <p className="text-slate-400 max-w-2xl mx-auto text-lg">
+              Tudo o que você precisa para dominar a ciência do sono e acordar revigorado todos os dias.
+            </p>
+          </motion.div>
+        </div>
+
+        <div className="grid lg:grid-cols-12 gap-12 items-start">
+          {/* Bonuses Column */}
+          <div className="lg:col-span-7 space-y-6">
+            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+              <Zap className="text-gold w-6 h-6" /> O que você vai receber:
+            </h3>
+            
+            <div className="glass p-6 rounded-3xl border-gold/20 relative overflow-hidden group">
+              <div className="absolute top-0 right-0 bg-gold text-night-blue font-black px-4 py-1 rounded-bl-2xl text-xs uppercase">Principal</div>
+              <div className="flex gap-6 items-start">
+                <div className="w-16 h-16 rounded-2xl bg-gold/10 flex items-center justify-center text-gold shrink-0">
+                  <CheckCircle2 className="w-8 h-8" />
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold text-white mb-2">Ebook Somnia: A Ciência do Sono</h4>
+                  <p className="text-slate-400 text-sm">O guia definitivo baseado em TCC-I e Neurociência para acabar com a insônia.</p>
+                </div>
+              </div>
+            </div>
+
+            {bonuses.map((b, i) => (
+              <motion.div 
+                key={i}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+                className="glass p-6 rounded-3xl border-white/5 flex gap-6 items-start hover:border-soft-purple/30 transition-all"
+              >
+                <div className="w-12 h-12 rounded-xl bg-soft-purple/10 flex items-center justify-center text-soft-purple shrink-0">
+                  <Zap className="w-6 h-6" />
+                </div>
+                <div>
+                  <div className="flex justify-between items-center mb-1">
+                    <h4 className="text-lg font-bold text-white">{b.title}</h4>
+                    <span className="text-gold font-mono text-xs line-through opacity-50">{b.value}</span>
+                  </div>
+                  <p className="text-slate-400 text-sm">{b.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Pricing Card */}
+          <div className="lg:col-span-5 sticky top-24">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-[3rem] p-10 text-night-blue shadow-[0_0_50px_rgba(242,125,38,0.2)] border-4 border-conversion/20"
+            >
+              <div className="text-center mb-8">
+                <span className="text-slate-500 text-sm font-bold uppercase tracking-widest line-through">De R$ 297,00</span>
+                <div className="flex items-center justify-center gap-2 mt-2">
+                  <span className="text-2xl font-bold">Por apenas</span>
+                  <span className="text-6xl font-black text-conversion tracking-tighter">R$ 97</span>
+                </div>
+                <p className="text-slate-400 text-xs mt-2 font-bold uppercase">Ou em 12x de R$ 9,68</p>
+              </div>
+
+              <button className="w-full bg-conversion hover:bg-conversion/90 text-white font-black py-6 rounded-2xl text-xl shadow-xl shadow-conversion/20 transition-all hover:scale-[1.02] active:scale-95 mb-8 flex items-center justify-center gap-3">
+                QUERO MEU ACESSO AGORA
+                <Zap className="w-6 h-6 fill-current" />
+              </button>
+
+              <div className="space-y-4 border-t border-slate-100 pt-8">
+                <div className="flex items-center gap-3 text-slate-600 text-sm font-medium">
+                  <ShieldCheck className="w-5 h-5 text-conversion" />
+                  <span>Garantia incondicional de 7 dias</span>
+                </div>
+                <div className="flex items-center gap-3 text-slate-600 text-sm font-medium">
+                  <Lock className="w-5 h-5 text-conversion" />
+                  <span>Pagamento 100% seguro e criptografado</span>
+                </div>
+                <div className="flex items-center gap-3 text-slate-600 text-sm font-medium">
+                  <CreditCard className="w-5 h-5 text-conversion" />
+                  <span>Acesso imediato após a confirmação</span>
+                </div>
+              </div>
+
+              <div className="mt-8 flex justify-center gap-4 opacity-30 grayscale">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" className="h-4" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" className="h-6" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" className="h-5" />
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
