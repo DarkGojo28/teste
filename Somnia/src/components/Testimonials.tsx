@@ -1,4 +1,4 @@
-import { TestimonialsMarquee, Testimonial } from "@/src/components/ui/testimonials-columns-1";
+import { TestimonialsGrid, Testimonial } from "@/src/components/ui/testimonials-columns-1";
 import { motion } from "motion/react";
 
 const testimonials: Testimonial[] = [
@@ -64,10 +64,8 @@ export const Testimonials = () => {
             Junte-se a milhares de pessoas que recuperaram suas noites e transformaram suas vidas com o Somnia.
           </p>
         </motion.div>
-      </div>
 
-      <div className="relative [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]">
-        <TestimonialsMarquee testimonials={testimonials} duration={50} />
+        <TestimonialsGrid testimonials={testimonials} />
       </div>
     </section>
   );

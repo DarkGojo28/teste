@@ -1,9 +1,10 @@
 import { motion } from 'motion/react';
-import { Sparkles, ArrowRight, Star, ShieldCheck, Zap, Moon, Brain, Clock } from 'lucide-react';
+import { Sparkles, ArrowRight, Star, ShieldCheck, Zap, Moon, Brain, Clock, Lock } from 'lucide-react';
+import { Countdown } from './Countdown';
 
 export const Hero = () => {
-  const scrollToPricing = () => {
-    document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToOffer = () => {
+    document.getElementById('offer')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -31,25 +32,44 @@ export const Hero = () => {
               Pare de lutar contra o travesseiro. Descubra o método científico para adormecer em minutos e acordar verdadeiramente renovado.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button 
-                onClick={scrollToPricing}
-                className="bg-conversion text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-emerald-400 transition-all flex items-center justify-center gap-2 glow-green group shadow-xl"
-              >
-                QUERO DORMIR MELHOR HOJE
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="glass text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all">
-                Ver Capítulo Grátis
-              </button>
+            <div className="flex flex-col gap-6 mb-10">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button 
+                  onClick={scrollToOffer}
+                  className="bg-conversion text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-emerald-400 transition-all flex items-center justify-center gap-2 glow-green group shadow-xl"
+                >
+                  QUERO DORMIR MELHOR HOJE
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </button>
+                <button className="glass text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all">
+                  Ver Capítulo Grátis
+                </button>
+              </div>
+
+              <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-12">
+                <div className="flex flex-col gap-2">
+                  <span className="text-[10px] uppercase tracking-widest text-gold font-bold">Oferta encerra em:</span>
+                  <Countdown />
+                </div>
+                
+                <div className="flex flex-col gap-2">
+                  <span className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Pagamento Seguro:</span>
+                  <div className="flex items-center gap-3 opacity-40 grayscale hover:grayscale-0 transition-all">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" className="h-3" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" className="h-5" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" className="h-4" />
+                    <Lock className="w-3 h-3 text-white" />
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="mt-12 flex items-center gap-6">
+            <div className="flex items-center gap-6">
               <div className="relative">
                 <img 
                   src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=200&h=200" 
                   alt="Dra. Elara Vance" 
-                  className="w-16 h-16 rounded-full border-2 border-gold object-cover"
+                  className="w-16 h-16 rounded-full border-2 border-gold object-cover shadow-lg"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute -bottom-2 -right-2 bg-gold text-night-blue text-[8px] font-black px-2 py-1 rounded-full uppercase tracking-tighter shadow-lg">
@@ -73,48 +93,63 @@ export const Hero = () => {
             transition={{ duration: 1, delay: 0.2 }}
             className="relative"
           >
-            {/* 3D Mockup Placeholder */}
+            {/* 3D Mockup Ebook */}
             <div className="relative z-10 aspect-[4/5] max-w-md mx-auto perspective-1000">
               <motion.div 
-                animate={{ rotateY: [-5, 5, -5], rotateX: [2, -2, 2] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                className="relative h-full w-full bg-gradient-to-br from-[#1E293B] to-night-blue rounded-[2rem] border border-white/10 overflow-hidden shadow-2xl flex flex-col items-center justify-center p-8 text-center"
+                animate={{ rotateY: [-8, 8, -8], rotateX: [4, -4, 4] }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+                className="relative h-full w-full bg-gradient-to-br from-[#1E293B] to-night-blue rounded-[2.5rem] border-4 border-white/10 overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] flex flex-col items-center justify-center p-8 text-center"
               >
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1511295742364-917e703b1972?auto=format&fit=crop&q=80&w=800')] opacity-20 bg-cover bg-center" />
+                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1511295742364-917e703b1972?auto=format&fit=crop&q=80&w=800')] opacity-30 bg-cover bg-center" />
+                <div className="absolute inset-0 bg-gradient-to-tr from-night-blue/80 via-transparent to-soft-purple/20" />
+                
                 <div className="relative z-20">
-                  <Moon className="w-20 h-20 text-gold mb-6 mx-auto drop-shadow-[0_0_15px_rgba(245,158,11,0.5)]" />
-                  <h2 className="text-5xl font-display font-black mb-2 tracking-tighter text-white">SOMNIA</h2>
-                  <p className="text-gold font-bold tracking-[0.3em] uppercase text-[10px] mb-8">A Ciência do Sono</p>
-                  <div className="h-1 w-12 bg-gold/30 mx-auto mb-8 rounded-full" />
-                  <p className="text-slate-300 text-sm italic leading-relaxed">"O guia definitivo para encerrar o ciclo de exaustão."</p>
+                  <motion.div
+                    animate={{ y: [0, -10, 0] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  >
+                    <Moon className="w-24 h-24 text-gold mb-8 mx-auto drop-shadow-[0_0_20px_rgba(245,158,11,0.6)]" />
+                  </motion.div>
+                  <h2 className="text-6xl font-display font-black mb-2 tracking-tighter text-white drop-shadow-lg">SOMNIA</h2>
+                  <p className="text-gold font-bold tracking-[0.4em] uppercase text-[12px] mb-10">A Ciência do Sono</p>
+                  <div className="h-1.5 w-16 bg-gold/40 mx-auto mb-10 rounded-full" />
+                  <p className="text-slate-200 text-lg italic leading-relaxed font-serif">"O guia definitivo para encerrar o ciclo de exaustão."</p>
                 </div>
-                <div className="absolute bottom-8 left-0 right-0 text-[10px] text-slate-500 font-bold tracking-widest uppercase">DRA. ELARA VANCE</div>
+                
+                <div className="absolute bottom-10 left-0 right-0">
+                  <div className="text-[12px] text-slate-400 font-bold tracking-[0.2em] uppercase mb-1">DRA. ELARA VANCE</div>
+                  <div className="text-[10px] text-gold/60 font-medium uppercase tracking-widest">Protocolo CBT-I Certificado</div>
+                </div>
+
+                {/* Tablet/Mobile Frame Effect */}
+                <div className="absolute top-4 left-1/2 -translate-x-1/2 w-20 h-1 bg-white/10 rounded-full" />
+                <div className="absolute inset-0 border-[12px] border-black/20 rounded-[2.5rem] pointer-events-none" />
               </motion.div>
             </div>
             
             {/* Floating Icons */}
             <motion.div 
-              animate={{ y: [0, -15, 0], rotate: [0, 5, 0] }}
+              animate={{ y: [0, -20, 0], rotate: [0, 10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-10 right-10 w-16 h-16 glass rounded-2xl flex items-center justify-center shadow-xl z-20"
+              className="absolute -top-12 right-0 w-20 h-20 glass rounded-3xl flex items-center justify-center shadow-2xl z-20 border border-white/20"
             >
-              <Brain className="text-soft-purple w-8 h-8" />
+              <Brain className="text-soft-purple w-10 h-10 drop-shadow-[0_0_10px_rgba(124,58,237,0.4)]" />
             </motion.div>
 
             <motion.div 
-              animate={{ y: [0, 15, 0], rotate: [0, -5, 0] }}
+              animate={{ y: [0, 20, 0], rotate: [0, -10, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              className="absolute top-1/2 -left-10 w-14 h-14 glass rounded-2xl flex items-center justify-center shadow-xl z-20"
+              className="absolute top-1/2 -left-16 w-16 h-16 glass rounded-2xl flex items-center justify-center shadow-2xl z-20 border border-white/20"
             >
-              <Clock className="text-gold w-7 h-7" />
+              <Clock className="text-gold w-8 h-8 drop-shadow-[0_0_10px_rgba(245,158,11,0.4)]" />
             </motion.div>
 
             <motion.div 
-              animate={{ scale: [1, 1.1, 1] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-5 right-20 w-12 h-12 glass rounded-full flex items-center justify-center shadow-xl z-20"
+              animate={{ scale: [1, 1.2, 1], rotate: [0, 360, 0] }}
+              transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+              className="absolute -bottom-10 right-10 w-14 h-14 glass rounded-full flex items-center justify-center shadow-2xl z-20 border border-white/20"
             >
-              <Moon className="text-white w-6 h-6" />
+              <Moon className="text-white w-7 h-7" />
             </motion.div>
           </motion.div>
         </div>

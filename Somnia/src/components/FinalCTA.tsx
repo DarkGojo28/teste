@@ -2,6 +2,13 @@ import { motion } from 'motion/react';
 import { Zap, ShieldCheck } from 'lucide-react';
 
 export const FinalCTA = () => {
+  const scrollToOffer = () => {
+    const element = document.getElementById('offer');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-24 relative overflow-hidden">
       {/* Background Gradient */}
@@ -33,7 +40,10 @@ export const FinalCTA = () => {
           </p>
 
           <div className="flex flex-col items-center gap-6">
-            <button className="bg-conversion hover:bg-conversion/90 text-white font-black py-8 px-16 rounded-3xl text-2xl shadow-2xl shadow-conversion/30 transition-all hover:scale-[1.05] active:scale-95 flex items-center gap-4 group">
+            <button 
+              onClick={scrollToOffer}
+              className="bg-conversion hover:bg-conversion/90 text-white font-black py-8 px-16 rounded-3xl text-2xl shadow-2xl shadow-conversion/30 transition-all hover:scale-[1.05] active:scale-95 flex items-center gap-4 group"
+            >
               QUERO DORMIR MELHOR HOJE
               <Zap className="w-8 h-8 fill-current group-hover:animate-pulse" />
             </button>
