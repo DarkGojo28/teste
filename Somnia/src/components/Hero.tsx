@@ -1,6 +1,5 @@
 import { motion } from 'motion/react';
-import { Sparkles, ArrowRight, Star, ShieldCheck, Zap, Moon, Brain, Clock, Lock } from 'lucide-react';
-import { Countdown } from './Countdown';
+import { ArrowRight, Star, ShieldCheck, Zap, Moon, Brain, Clock, Lock } from 'lucide-react';
 
 export const Hero = () => {
   const scrollToOffer = () => {
@@ -8,7 +7,7 @@ export const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-gradient-to-br from-night-blue via-[#1E1B4B] to-[#431407]/20">
+    <section id="hero" className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-gradient-to-br from-night-blue via-[#1E1B4B] to-soft-purple/20">
       {/* Background Elements */}
       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-soft-purple/20 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-gold/10 blur-[120px] rounded-full pointer-events-none" />
@@ -21,66 +20,51 @@ export const Hero = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-soft-purple/10 border border-soft-purple/20 text-soft-purple text-xs font-bold tracking-widest uppercase mb-8">
-              <Sparkles className="w-3 h-3" />
-              Mais de 50.000 Noites Transformadas
+              <Moon className="w-3 h-3" />
+              Somnia — Sono, Energia e Disposição
             </div>
             <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] mb-6 text-white">
-              O Fim das Noites <br />
-              <span className="text-gold">Em Claro</span> Começa Aqui.
+              O guia para quem <br />
+              <span className="text-gold">dormiu mal</span> de mais.
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-xl leading-relaxed">
-              Você não precisa de mais remédios ou chás milagrosos. Você precisa descobrir o que está "travando" seu sono todas as noites.
+              Descubra por que você não descansa de verdade — e o que fazer a partir de hoje à noite.
             </p>
             
             <div className="flex flex-col gap-6 mb-10">
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={scrollToOffer}
-                  className="bg-conversion text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-emerald-400 transition-all flex items-center justify-center gap-2 glow-green group shadow-xl"
+                  className="bg-gold text-slate-900 px-8 py-4 rounded-full font-black text-lg hover:bg-amber-400 transition-all flex items-center justify-center gap-2 shadow-xl shadow-gold/20 group"
                 >
-                  QUERO DORMIR A NOITE TODA
+                  Quero descobrir o meu problema
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-12">
-                <div className="flex flex-col gap-2">
-                  <span className="text-[10px] uppercase tracking-widest text-gold font-bold">Oferta encerra em:</span>
-                  <Countdown />
+              <div className="flex flex-wrap items-center gap-6">
+                <div className="flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-400">
+                  <ShieldCheck className="w-4 h-4 text-gold" />
+                  Baseado em ciência
                 </div>
-                
-                <div className="flex flex-col gap-2">
-                  <span className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Pagamento Seguro:</span>
-                  <div className="flex items-center gap-3 opacity-40 grayscale hover:grayscale-0 transition-all">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" className="h-3" />
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" className="h-5" />
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" className="h-4" />
-                    <Lock className="w-3 h-3 text-white" />
-                  </div>
+                <div className="flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-400">
+                  <Brain className="w-4 h-4 text-gold" />
+                  Diagnóstico personalizado
+                </div>
+                <div className="flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-slate-400">
+                  <Zap className="w-4 h-4 text-gold" />
+                  Aplicável hoje à noite
                 </div>
               </div>
             </div>
 
-            <div className="flex items-center gap-6">
-              <div className="relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=200&h=200" 
-                  alt="Dra. Elara Vance" 
-                  className="w-16 h-16 rounded-full border-2 border-gold object-cover shadow-lg"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute -bottom-2 -right-2 bg-gold text-night-blue text-[8px] font-black px-2 py-1 rounded-full uppercase tracking-tighter shadow-lg">
-                  Especialista CBT-I
-                </div>
+            <div className="flex items-center gap-6 opacity-60">
+              <div className="flex text-gold mb-0.5">
+                {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-4 h-4 fill-current" />)}
               </div>
-              <div>
-                <div className="flex text-gold mb-0.5">
-                  {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-4 h-4 fill-current" />)}
-                </div>
-                <p className="text-sm text-slate-400">
-                  <span className="text-white font-bold">4.9/5</span> baseado em 2.400+ alunos
-                </p>
-              </div>
+              <p className="text-sm text-slate-400">
+                <span className="text-white font-bold">4.9/5</span> baseado em 2.400+ alunos
+              </p>
             </div>
           </motion.div>
 
@@ -108,14 +92,14 @@ export const Hero = () => {
                     <Moon className="w-24 h-24 text-gold mb-8 mx-auto drop-shadow-[0_0_20px_rgba(245,158,11,0.6)]" />
                   </motion.div>
                   <h2 className="text-6xl font-display font-black mb-2 tracking-tighter text-white drop-shadow-lg">SOMNIA</h2>
-                  <p className="text-gold font-bold tracking-[0.4em] uppercase text-[12px] mb-10">A Ciência do Sono</p>
+                  <p className="text-gold font-bold tracking-[0.4em] uppercase text-[12px] mb-10 text-center">Sono, Energia e Disposição</p>
                   <div className="h-1.5 w-16 bg-gold/40 mx-auto mb-10 rounded-full" />
                   <p className="text-slate-200 text-lg italic leading-relaxed font-serif">"O guia definitivo para encerrar o ciclo de exaustão."</p>
                 </div>
                 
                 <div className="absolute bottom-10 left-0 right-0">
-                  <div className="text-[12px] text-slate-400 font-bold tracking-[0.2em] uppercase mb-1">DRA. ELARA VANCE</div>
-                  <div className="text-[10px] text-gold/60 font-medium uppercase tracking-widest">Protocolo CBT-I Certificado</div>
+                  <div className="text-[12px] text-slate-400 font-bold tracking-[0.2em] uppercase mb-1">SOMNIA</div>
+                  <div className="text-[10px] text-gold/60 font-medium uppercase tracking-widest">Protocolo Científico</div>
                 </div>
 
                 {/* Tablet/Mobile Frame Effect */}
@@ -150,31 +134,9 @@ export const Hero = () => {
             </motion.div>
           </motion.div>
         </div>
-
-        {/* Static Trust Bar */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-24 pt-12 border-t border-white/5 flex flex-wrap justify-center gap-8 md:gap-16 opacity-60"
-        >
-          <div className="flex items-center gap-3">
-            <ShieldCheck className="text-conversion w-5 h-5" />
-            <span className="text-xs font-bold tracking-widest uppercase">Resultados Comprovados</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <Zap className="text-gold w-5 h-5" />
-            <span className="text-xs font-bold tracking-widest uppercase">Acesso Imediato</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <Star className="text-white w-5 h-5" />
-            <span className="text-xs font-bold tracking-widest uppercase">Método 100% Natural</span>
-          </div>
-        </motion.div>
       </div>
       
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-night-blue to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
     </section>
   );
 };

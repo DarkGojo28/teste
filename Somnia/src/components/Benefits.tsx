@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { Clock, Battery, Brain, Sparkles } from 'lucide-react';
 
-export const Benefits = () => {
+export const CuriositySection = () => {
   const curiosities = [
     {
       icon: <Brain className="w-10 h-10 text-soft-purple" />,
