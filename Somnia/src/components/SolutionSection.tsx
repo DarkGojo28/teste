@@ -6,8 +6,8 @@ export const SolutionSection = () => {
     { icon: <Search className="w-10 h-10 text-soft-purple" />, title: "Diagnóstico do seu perfil", desc: "Entenda exatamente qual o seu tipo de insônia para atacar a causa raiz." },
     { icon: <Key className="w-10 h-10 text-gold" />, title: "O gatilho que você não vê", desc: "Identifique os sabotadores ocultos que impedem seu cérebro de desligar." },
     { icon: <Moon className="w-10 h-10 text-blue-500" />, title: "O ambiente certo para dormir", desc: "Transforme seu quarto em um santuário de descanso profundo." },
-    { icon: <Utensils className="w-10 h-10 text-conversion" />, title: "O que você come (e quando)", desc: "Ajuste sua alimentação para favorecer a produção natural de melatonina." },
-    { icon: <Pill className="w-10 h-10 text-red-400" />, title: "Suplementação com critério", desc: "Saiba o que realmente funciona e o que é desperdício de dinheiro." },
+    { icon: <Utensils className="w-10 h-10 text-conversion" />, title: "O nutriente que 'desliga' o cérebro", desc: "Ajuste sua alimentação para favorecer o hormônio do sono profundo." },
+    { icon: <Pill className="w-10 h-10 text-red-400" />, title: "O suplemento esquecido", desc: "Saiba o que realmente funciona e o que é desperdício de dinheiro." },
     { icon: <ClipboardList className="w-10 h-10 text-slate-600" />, title: "O protocolo do dia ideal", desc: "Um passo a passo do despertar ao deitar para garantir o sono." }
   ];
 

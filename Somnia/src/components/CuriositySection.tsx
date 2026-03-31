@@ -6,7 +6,7 @@ export const CuriositySection = () => {
     {
       icon: <Brain className="w-10 h-10 text-soft-purple" />,
       title: "O Interruptor do Sono",
-      desc: "Existe um hormônio que, quando desregulado, mantém você acordado mesmo morto de cansaço. Descubra como resetá-lo em 3 dias."
+      desc: "Existe um hormônio que, quando desregulado, mantém você acordado mesmo morto de cansaço. O protocolo de 3 dias para resetá-lo."
     },
     {
       icon: <Clock className="w-10 h-10 text-conversion" />,
@@ -69,7 +69,7 @@ export const CuriositySection = () => {
               <ul className="space-y-4">
                 <li className="flex items-center gap-3 text-slate-400">
                   <div className="w-1.5 h-1.5 rounded-full bg-gold" />
-                  O suplemento que ninguém menciona (e que custa centavos)
+                  O suplemento que quase ninguém menciona — e que faz mais diferença que a melatonina
                 </li>
                 <li className="flex items-center gap-3 text-slate-400">
                   <div className="w-1.5 h-1.5 rounded-full bg-gold" />

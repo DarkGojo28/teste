@@ -1,11 +1,10 @@
 import { motion } from 'motion/react';
-import { CheckCircle2, ShieldCheck, CreditCard, Lock, Zap } from 'lucide-react';
+import { CheckCircle2, ShieldCheck, CreditCard, Lock, Zap, Moon } from 'lucide-react';
 
 export const Offer = () => {
   const bonuses = [
-    { title: "BÔNUS #1: O Guia dos Chás Certos", value: "R$ 97,00", desc: "Descubra qual chá usar para o SEU tipo de insônia (nem todo chá funciona para todo mundo - eu aprendi isso da pior forma)." },
-    { title: "BÔNUS #2: O Protocolo de 3 Dias para Reset Hormonal", value: "R$ 47,00", desc: "Como identificar se o seu hormônio do estresse está 'travado' e o passo a passo para normalizá-lo." },
-    { title: "BÔNUS #3: O Ritual dos 60 Segundos", value: "R$ 67,00", desc: "A técnica de respiração que desliga sua mente (usada por atletas de alta performance)." }
+    { title: "BÔNUS #1: O Guia dos Chás Certos", value: "R$ 97,00", desc: "10 receitas com modo de preparo, horário ideal e os erros comuns que cortam o efeito." },
+    { title: "BÔNUS #2: Checklist da Noite Perfeita", value: "R$ 47,00", desc: "Um guia prático para você imprimir e usar toda noite, garantindo que nada seja esquecido." }
   ];
 
   return (
@@ -29,14 +28,15 @@ export const Offer = () => {
           {/* Bonuses Column */}
           <div className="lg:col-span-7 space-y-6">
             <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-              <Zap className="text-gold w-6 h-6" /> O que você vai conquistar:
+              <Zap className="text-gold w-6 h-6" /> O que você vai receber:
             </h3>
             
             <div className="glass p-6 rounded-3xl border-gold/20 relative overflow-hidden group">
               <div className="absolute top-0 right-0 bg-gold text-night-blue font-black px-4 py-1 rounded-bl-2xl text-xs uppercase">Principal</div>
-              <div className="flex gap-6 items-start">
-                <div className="w-16 h-16 rounded-2xl bg-gold/10 flex items-center justify-center text-gold shrink-0">
-                  <CheckCircle2 className="w-8 h-8" />
+              <div className="flex gap-6 items-center">
+                <div className="w-24 h-32 rounded-xl bg-slate-800 flex items-center justify-center text-gold shrink-0 overflow-hidden relative border border-white/10">
+                  <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1511295742364-917e703b1972?auto=format&fit=crop&q=80&w=400')] opacity-30 bg-cover bg-center" />
+                  <Moon className="w-10 h-10 relative z-10" />
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-white mb-2">Ebook Somnia: A Ciência do Sono</h4>
@@ -77,17 +77,16 @@ export const Offer = () => {
               className="bg-white rounded-[3rem] p-10 text-night-blue shadow-[0_0_50px_rgba(242,125,38,0.2)] border-4 border-conversion/20"
             >
               <div className="text-center mb-8">
-                <span className="text-slate-500 text-sm font-bold uppercase tracking-widest line-through">De R$ 297,00</span>
+                <span className="text-slate-500 text-sm font-bold uppercase tracking-widest line-through">De R$ 67,00</span>
                 <div className="flex items-center justify-center gap-2 mt-2">
                   <span className="text-2xl font-bold">Por apenas</span>
-                  <span className="text-6xl font-black text-conversion tracking-tighter">R$ 97</span>
+                  <span className="text-6xl font-black text-conversion tracking-tighter">R$ 37</span>
                 </div>
-                <p className="text-slate-400 text-xs mt-2 font-bold uppercase">Ou em 12x de R$ 9,68</p>
+                <p className="text-slate-400 text-xs mt-2 font-bold uppercase tracking-widest">Pagamento único · Acesso imediato · Ebook + 2 bônus</p>
               </div>
 
               <button className="w-full bg-conversion hover:bg-conversion/90 text-white font-black py-6 rounded-2xl text-xl shadow-xl shadow-conversion/20 transition-all hover:scale-[1.02] active:scale-95 mb-8 flex items-center justify-center gap-3">
-                QUERO MEU ACESSO AGORA
-                <Zap className="w-6 h-6 fill-current" />
+                Quero começar hoje à noite →
               </button>
 
               <div className="space-y-4 border-t border-slate-100 pt-8">

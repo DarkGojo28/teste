@@ -3,40 +3,22 @@ import { motion } from "motion/react";
 
 const testimonials: Testimonial[] = [
   {
-    text: "Eu costumava passar horas olhando para o teto. A técnica de 60 segundos do Somnia mudou tudo. Finalmente durmo em menos de 5 minutos.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop",
-    name: "Mariana Costa",
-    role: "Designer Gráfica",
-  },
-  {
-    text: "Funciona porque ataca a causa biológica, não apenas os sintomas. Minha ansiedade noturna simplesmente desapareceu.",
+    text: "Na terceira noite depois de aplicar o protocolo, dormi do início ao fim pela primeira vez em anos. O que mais me impressionou foi acordar sem aquela sensação de 'ressaca' que os remédios deixavam. Minha produtividade no trabalho dobrou.\n\nFunciona porque: Ataca a causa biológica que mantém o cérebro em estado de alerta, não apenas os sintomas.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop",
-    name: "Ricardo Mendes",
-    role: "Engenheiro de Software",
+    name: "Marcos T.",
+    role: "Engenheiro, 38 anos — São Paulo",
   },
   {
-    text: "Acordar às 6h com energia total parecia impossível. O 'reset hormonal' de 3 dias foi a chave que faltava na minha vida.",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop",
-    name: "Juliana Silva",
-    role: "Executiva de Marketing",
+    text: "Eu achei que já sabia tudo sobre higiene do sono. O guia me mostrou dois erros que eu cometia 12 horas antes de deitar e que estavam arruinando meu descanso. Hoje, deito e apago em menos de 10 minutos.\n\nFunciona porque: Reequilibra o ciclo natural do corpo através de ajustes simples mas poderosos na rotina diária.",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop",
+    name: "Fernanda C.",
+    role: "Professora, 44 anos — Belo Horizonte",
   },
   {
-    text: "O guia dos chás certos me mostrou por que eu estava errando há anos. Cada tipo de insônia pede uma solução diferente.",
+    text: "O diagnóstico do início foi o que mudou tudo pra mim. Eu descobri que meu tipo de insônia não era o que eu pensava. O suplemento sugerido (que custa centavos) fez mais por mim do que anos de terapia e remédios caros.\n\nFunciona porque: Identifica o perfil específico de cada pessoa e entrega a solução exata para aquele metabolismo.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop",
-    name: "Carlos Eduardo",
-    role: "Empresário",
-  },
-  {
-    text: "Finalmente entendi o erro que eu cometia 12 horas antes de deitar. Minha eficiência de sono melhorou 40% em uma semana.",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop",
-    name: "Ana Paula",
-    role: "Gerente de Projetos",
-  },
-  {
-    text: "Sem remédios, sem efeitos colaterais. Apenas o conhecimento de como o corpo realmente funciona durante a noite.",
-    image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=150&h=150&fit=crop",
-    name: "Beatriz Oliveira",
-    role: "Analista de Dados",
+    name: "Ricardo M.",
+    role: "Empreendedor, 51 anos — Curitiba",
   }
 ];
 

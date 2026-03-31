@@ -5,7 +5,7 @@ import { SectionLoader } from './components/SectionLoader';
 // Lazy load below-the-fold components
 const ProblemSection = lazy(() => import('./components/ProblemSection').then(m => ({ default: m.ProblemSection })));
 const AgitationSection = lazy(() => import('./components/AgitationSection').then(m => ({ default: m.AgitationSection })));
-const CuriositySection = lazy(() => import('./components/Benefits').then(m => ({ default: m.CuriositySection })));
+const CuriositySection = lazy(() => import('./components/CuriositySection').then(m => ({ default: m.CuriositySection })));
 const SolutionSection = lazy(() => import('./components/SolutionSection').then(m => ({ default: m.SolutionSection })));
 const Testimonials = lazy(() => import('./components/Testimonials').then(m => ({ default: m.Testimonials })));
 const Author = lazy(() => import('./components/Author').then(m => ({ default: m.Author })));
