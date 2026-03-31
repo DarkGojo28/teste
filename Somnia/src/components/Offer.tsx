@@ -3,9 +3,9 @@ import { CheckCircle2, ShieldCheck, CreditCard, Lock, Zap } from 'lucide-react';
 
 export const Offer = () => {
   const bonuses = [
-    { title: "Bônus 1: Auditoria do Ambiente de Sono", value: "R$ 97,00", desc: "Transforme seu quarto em um santuário de descanso profundo." },
-    { title: "Bônus 2: Hacks Alimentares para o Sono", value: "R$ 47,00", desc: "O que comer (e evitar) para disparar a melatonina natural." },
-    { title: "Bônus 3: Rotina Noturna de 10 Minutos", value: "R$ 67,00", desc: "O passo a passo exato para desligar o cérebro em minutos." }
+    { title: "BÔNUS #1: O Guia dos Chás Certos", value: "R$ 97,00", desc: "Descubra qual chá usar para o SEU tipo de insônia (nem todo chá funciona para todo mundo - eu aprendi isso da pior forma)." },
+    { title: "BÔNUS #2: O Protocolo de 3 Dias para Reset Hormonal", value: "R$ 47,00", desc: "Como identificar se o seu hormônio do estresse está 'travado' e o passo a passo para normalizá-lo." },
+    { title: "BÔNUS #3: O Ritual dos 60 Segundos", value: "R$ 67,00", desc: "A técnica de respiração que desliga sua mente (usada por atletas de alta performance)." }
   ];
 
   return (
@@ -18,9 +18,9 @@ export const Offer = () => {
             viewport={{ once: true }}
           >
             <span className="text-gold font-bold uppercase tracking-widest text-sm">Oferta Exclusiva</span>
-            <h2 className="text-4xl md:text-6xl font-display font-bold mt-4 mb-6">Recupere suas noites hoje</h2>
+            <h2 className="text-4xl md:text-6xl font-display font-bold mt-4 mb-6">Recupere suas noites (e sua vida) hoje</h2>
             <p className="text-slate-400 max-w-2xl mx-auto text-lg">
-              Tudo o que você precisa para dominar a ciência do sono e acordar revigorado todos os dias.
+              Imagine acordar amanhã sentindo-se renovado, com energia total e sem aquele "nevoeiro mental" que te persegue.
             </p>
           </motion.div>
         </div>
@@ -29,7 +29,7 @@ export const Offer = () => {
           {/* Bonuses Column */}
           <div className="lg:col-span-7 space-y-6">
             <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-              <Zap className="text-gold w-6 h-6" /> O que você vai receber:
+              <Zap className="text-gold w-6 h-6" /> O que você vai conquistar:
             </h3>
             
             <div className="glass p-6 rounded-3xl border-gold/20 relative overflow-hidden group">
@@ -40,7 +40,7 @@ export const Offer = () => {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-white mb-2">Ebook Somnia: A Ciência do Sono</h4>
-                  <p className="text-slate-400 text-sm">O guia definitivo baseado em TCC-I e Neurociência para acabar com a insônia.</p>
+                  <p className="text-slate-400 text-sm">O guia definitivo para encerrar o ciclo de exaustão e dominar a arte de dormir profundamente.</p>
                 </div>
               </div>
             </div>
@@ -52,9 +52,9 @@ export const Offer = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className="glass p-6 rounded-3xl border-white/5 flex gap-6 items-start hover:border-soft-purple/30 transition-all"
+                className="glass p-6 rounded-3xl border-white/5 flex gap-6 items-start hover:border-gold/30 transition-all"
               >
-                <div className="w-12 h-12 rounded-xl bg-soft-purple/10 flex items-center justify-center text-soft-purple shrink-0">
+                <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold shrink-0">
                   <Zap className="w-6 h-6" />
                 </div>
                 <div>

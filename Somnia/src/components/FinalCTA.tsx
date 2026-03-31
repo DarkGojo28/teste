@@ -32,11 +32,12 @@ export const FinalCTA = () => {
           </motion.div>
 
           <h2 className="text-4xl md:text-7xl font-display font-black text-white mb-8 tracking-tighter leading-none">
-            Sua jornada para o sono profundo começa agora.
+            Imagine acordar amanhã <br />
+            <span className="text-gold">com energia total.</span>
           </h2>
           
           <p className="text-slate-400 text-xl md:text-2xl max-w-3xl mx-auto mb-12 leading-relaxed">
-            Não deixe sua saúde para amanhã. Recupere sua energia, foco e vitalidade com o método Somnia.
+            Não deixe sua vida passar em um nevoeiro de cansaço. Recupere sua clareza mental e sua vitalidade com o protocolo Somnia.
           </p>
 
           <div className="flex flex-col items-center gap-6">
@@ -44,7 +45,7 @@ export const FinalCTA = () => {
               onClick={scrollToOffer}
               className="bg-conversion hover:bg-conversion/90 text-white font-black py-8 px-16 rounded-3xl text-2xl shadow-2xl shadow-conversion/30 transition-all hover:scale-[1.05] active:scale-95 flex items-center gap-4 group"
             >
-              QUERO DORMIR MELHOR HOJE
+              QUERO DORMIR A NOITE TODA
               <Zap className="w-8 h-8 fill-current group-hover:animate-pulse" />
             </button>
             

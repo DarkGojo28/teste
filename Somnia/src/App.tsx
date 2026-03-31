@@ -4,7 +4,8 @@ import { Hero } from './components/Hero';
 import { SectionLoader } from './components/SectionLoader';
 
 // Lazy load below-the-fold components
-const Benefits = lazy(() => import('./components/Benefits').then(m => ({ default: m.Benefits })));
+const ProblemSection = lazy(() => import('./components/ProblemSection').then(m => ({ default: m.ProblemSection })));
+const CuriositySection = lazy(() => import('./components/Benefits').then(m => ({ default: m.Benefits })));
 const Testimonials = lazy(() => import('./components/Testimonials').then(m => ({ default: m.Testimonials })));
 const Author = lazy(() => import('./components/Author').then(m => ({ default: m.Author })));
 const Offer = lazy(() => import('./components/Offer').then(m => ({ default: m.Offer })));
@@ -19,7 +20,8 @@ export default function App() {
       <main>
         <Hero />
         <Suspense fallback={<SectionLoader />}>
-          <Benefits />
+          <ProblemSection />
+          <CuriositySection />
           <Testimonials />
           <Author />
           <Offer />

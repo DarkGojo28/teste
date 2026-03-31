@@ -25,11 +25,11 @@ export const Hero = () => {
               Mais de 50.000 Noites Transformadas
             </div>
             <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] mb-6 text-white">
-              Recupere Suas Noites, <br />
-              <span className="text-gold">Transforme</span> Sua Vida.
+              O Fim das Noites <br />
+              <span className="text-gold">Em Claro</span> Começa Aqui.
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-xl leading-relaxed">
-              Pare de lutar contra o travesseiro. Descubra o método científico para adormecer em minutos e acordar verdadeiramente renovado.
+              Você não precisa de mais remédios ou chás milagrosos. Você precisa descobrir o que está "travando" seu sono todas as noites.
             </p>
             
             <div className="flex flex-col gap-6 mb-10">
@@ -38,11 +38,8 @@ export const Hero = () => {
                   onClick={scrollToOffer}
                   className="bg-conversion text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-emerald-400 transition-all flex items-center justify-center gap-2 glow-green group shadow-xl"
                 >
-                  QUERO DORMIR MELHOR HOJE
+                  QUERO DORMIR A NOITE TODA
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
-                <button className="glass text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all">
-                  Ver Capítulo Grátis
                 </button>
               </div>
 

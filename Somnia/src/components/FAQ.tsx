@@ -12,7 +12,7 @@ export const FAQ = () => {
     },
     {
       q: "O método funciona para quem tem insônia há anos?",
-      a: "Sim! O Somnia é baseado no TCC-I (Terapia Cognitivo-Comportamental para Insônia), que é o padrão-ouro da medicina do sono para casos crônicos. Ele ataca a causa biológica, não apenas os sintomas."
+      a: "Sim! O Somnia foi desenvolvido para atacar a causa biológica que mantém o cérebro em estado de alerta, mesmo em casos crônicos. Ele foca no que a medicina tradicional muitas vezes ignora."
     },
     {
       q: "E se eu não gostar do conteúdo?",
@@ -20,7 +20,7 @@ export const FAQ = () => {
     },
     {
       q: "Preciso comprar algum medicamento ou suplemento?",
-      a: "Não. O foco do Somnia é o reequilíbrio natural do seu ciclo circadiano através de mudanças comportamentais e ambientais. Ensinamos como usar a biologia do seu próprio corpo a seu favor."
+      a: "Não. O foco do Somnia é o reequilíbrio natural do seu corpo. Embora mencionemos alguns aliados naturais pouco conhecidos, o segredo está no protocolo de comportamento e ambiente."
     }
   ];
 

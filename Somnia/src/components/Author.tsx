@@ -42,10 +42,12 @@ export const Author = () => {
             viewport={{ once: true }}
             className="text-center lg:text-left"
           >
-            <span className="text-gold font-bold uppercase tracking-[0.3em] text-xs mb-4 block">Autoridade Científica</span>
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 text-white">Conheça a mente por trás do método</h2>
+            <span className="text-gold font-bold uppercase tracking-[0.3em] text-xs mb-4 block">A Mente por Trás do Método</span>
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 text-white">Eu também já estive no seu lugar...</h2>
             <p className="text-slate-300 text-lg leading-relaxed mb-10">
-              A Dra. Elara Vance dedicou a última década a entender os mecanismos biológicos do sono. Após anos de pesquisa clínica em Harvard, ela desenvolveu o protocolo Somnia para ajudar pessoas a recuperarem sua saúde mental através do descanso profundo.
+              A Dra. Elara Vance não é apenas uma PhD em Neurociência. Ela foi uma vítima da insônia crônica por 7 anos. 
+              Após tentar todos os remédios e técnicas convencionais sem sucesso, ela decidiu usar sua base científica para investigar o que a medicina tradicional estava ignorando. 
+              O resultado foi a descoberta de um "padrão oculto" que regula o sono profundo — e que se tornou a base do protocolo Somnia.
             </p>
 
             <div className="grid sm:grid-cols-1 gap-4 mb-12">

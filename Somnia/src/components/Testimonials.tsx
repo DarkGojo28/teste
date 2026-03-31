@@ -3,37 +3,37 @@ import { motion } from "motion/react";
 
 const testimonials: Testimonial[] = [
   {
-    text: "Eu costumava passar horas olhando para o teto. A rotina de 10 minutos do Somnia mudou tudo. Finalmente durmo como um bebê.",
+    text: "Eu costumava passar horas olhando para o teto. A técnica de 60 segundos do Somnia mudou tudo. Finalmente durmo em menos de 5 minutos.",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop",
     name: "Mariana Costa",
     role: "Designer Gráfica",
   },
   {
-    text: "A abordagem baseada em ciência foi o que me convenceu. Sem truques, apenas técnicas reais que funcionam para insônia crônica.",
+    text: "Funciona porque ataca a causa biológica, não apenas os sintomas. Minha ansiedade noturna simplesmente desapareceu.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop",
     name: "Ricardo Mendes",
     role: "Engenheiro de Software",
   },
   {
-    text: "Acordar revigorada é uma sensação que eu não experimentava há anos. Este ebook vale cada centavo e muito mais.",
+    text: "Acordar às 6h com energia total parecia impossível. O 'reset hormonal' de 3 dias foi a chave que faltava na minha vida.",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop",
     name: "Juliana Silva",
     role: "Executiva de Marketing",
   },
   {
-    text: "A auditoria do ambiente foi reveladora. Pequenas mudanças no meu quarto fizeram uma diferença enorme na qualidade do sono.",
+    text: "O guia dos chás certos me mostrou por que eu estava errando há anos. Cada tipo de insônia pede uma solução diferente.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop",
     name: "Carlos Eduardo",
     role: "Empresário",
   },
   {
-    text: "Eu era cético sobre o TCC-I em casa, mas o guia torna tudo simples de seguir. Minha eficiência de sono melhorou 40%.",
+    text: "Finalmente entendi o erro que eu cometia 12 horas antes de deitar. Minha eficiência de sono melhorou 40% em uma semana.",
     image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop",
     name: "Ana Paula",
     role: "Gerente de Projetos",
   },
   {
-    text: "Finalmente, um guia que não diz apenas para 'relaxar'. Ele te dá as ferramentas biológicas para realmente disparar o sono.",
+    text: "Sem remédios, sem efeitos colaterais. Apenas o conhecimento de como o corpo realmente funciona durante a noite.",
     image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=150&h=150&fit=crop",
     name: "Beatriz Oliveira",
     role: "Analista de Dados",
