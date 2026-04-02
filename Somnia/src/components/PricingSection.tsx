@@ -35,24 +35,23 @@ export const PricingSection = () => {
 
             <button 
               onClick={scrollToOffer}
-              className="w-full bg-gold hover:bg-amber-400 text-slate-900 font-black py-8 rounded-3xl text-2xl shadow-xl shadow-gold/20 transition-all hover:scale-[1.02] active:scale-95 mb-10 flex items-center justify-center gap-4 group"
+              className="w-full bg-gold hover:bg-amber-400 text-slate-900 font-black py-8 rounded-3xl text-2xl shadow-[0_4px_14px_rgba(245,158,11,0.4)] transition-all hover:translate-y-[-2px] active:scale-95 mb-10 flex items-center justify-center gap-4 group"
             >
-              Quero começar hoje à noite
-              <ArrowRight className="w-8 h-8 group-hover:translate-x-2 transition-transform" />
+              Quero começar hoje à noite →
             </button>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              <div className="flex items-center justify-center gap-3 text-slate-300 text-sm font-bold uppercase tracking-widest">
-                <Lock className="w-5 h-5 text-gold" />
-                <span>Compra Segura</span>
+            <div className="flex flex-wrap items-center justify-center gap-8 py-6 border-y border-white/10 mb-12">
+              <div className="flex items-center gap-2 text-slate-300 text-xs font-bold uppercase tracking-widest">
+                <Lock className="w-4 h-4 text-gold" />
+                🔒 Compra Segura
               </div>
-              <div className="flex items-center justify-center gap-3 text-slate-300 text-sm font-bold uppercase tracking-widest">
-                <CreditCard className="w-5 h-5 text-gold" />
-                <span>Aceitamos Pix</span>
+              <div className="flex items-center gap-2 text-slate-300 text-xs font-bold uppercase tracking-widest">
+                <CreditCard className="w-4 h-4 text-gold" />
+                💳 Pix
               </div>
-              <div className="flex items-center justify-center gap-3 text-slate-300 text-sm font-bold uppercase tracking-widest">
-                <ShieldCheck className="w-5 h-5 text-gold" />
-                <span>Garantia 7 Dias</span>
+              <div className="flex items-center gap-2 text-slate-300 text-xs font-bold uppercase tracking-widest">
+                <ShieldCheck className="w-4 h-4 text-gold" />
+                🛡️ Acesso Imediato
               </div>
             </div>
 

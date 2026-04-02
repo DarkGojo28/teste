@@ -4,8 +4,8 @@ import { BookOpen, Globe, Users, CheckCircle } from 'lucide-react';
 export const Author = () => {
   const badges = [
     { icon: <BookOpen className="w-5 h-5" />, text: "Fundamentado em evidências" },
-    { icon: <Globe className="w-5 h-5" />, text: "Feito para a realidade brasileira" },
-    { icon: <Users className="w-5 h-5" />, text: "Testado em mais de 200 pessoas" }
+    { icon: <Globe className="w-5 h-5" />, text: "Realidade brasileira" },
+    { icon: <Users className="w-5 h-5" />, text: "Testado em 200+ pessoas" }
   ];
 
   return (
@@ -41,10 +41,10 @@ export const Author = () => {
             className="text-center lg:text-left"
           >
             <span className="text-soft-purple font-bold uppercase tracking-[0.3em] text-xs mb-4 block">Escrito por quem viveu o problema</span>
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 text-slate-900">Não por quem só estudou o assunto...</h2>
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 text-slate-900">O autor — Somnia</h2>
             <div className="text-slate-600 text-lg leading-relaxed mb-10 space-y-6">
               <p>
-                Eu também já estive exatamente no seu lugar. Eu sei o que é passar a noite olhando para o teto, sentindo o coração acelerar só de pensar que o despertador vai tocar em poucas horas.
+                <strong>Escrito por quem viveu o problema — não por quem só estudou o assunto.</strong>
               </p>
               <p>
                 Fiquei grisalho antes dos 25 anos por causa da insônia crônica. Tentei todos os remédios controlados, chás "milagrosos" e técnicas de higiene do sono que você possa imaginar. Nada funcionava a longo prazo.

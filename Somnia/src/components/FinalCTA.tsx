@@ -43,10 +43,9 @@ export const FinalCTA = () => {
           <div className="flex flex-col items-center gap-6">
             <button 
               onClick={scrollToOffer}
-              className="bg-conversion hover:bg-conversion/90 text-white font-black py-8 px-16 rounded-3xl text-2xl shadow-2xl shadow-conversion/30 transition-all hover:scale-[1.05] active:scale-95 flex items-center gap-4 group"
+              className="bg-gold hover:bg-amber-400 text-slate-900 font-black py-8 px-16 rounded-3xl text-2xl shadow-[0_4px_14px_rgba(245,158,11,0.4)] transition-all hover:translate-y-[-2px] active:scale-95 flex items-center gap-4 group"
             >
-              QUERO DORMIR A NOITE TODA
-              <Zap className="w-8 h-8 fill-current group-hover:animate-pulse" />
+              QUERO COMEÇAR HOJE À NOITE →
             </button>
             
             <div className="flex items-center gap-3 text-gold/60 text-sm font-bold uppercase tracking-widest">

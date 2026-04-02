@@ -17,9 +17,9 @@ export const Footer = () => {
           </div>
           
           <div className="flex flex-wrap justify-center gap-8 text-sm font-bold uppercase tracking-widest text-slate-400">
-            <a href="#" className="hover:text-soft-purple transition-colors">Políticas de Privacidade</a>
-            <a href="#" className="hover:text-soft-purple transition-colors">Termos de Uso</a>
-            <a href="#" className="hover:text-soft-purple transition-colors">Contato</a>
+            <a href="/politica-privacidade.html" className="hover:text-soft-purple transition-colors">Políticas de Privacidade</a>
+            <a href="/termos-uso.html" className="hover:text-soft-purple transition-colors">Termos de Uso</a>
+            <a href="/contato.html" className="hover:text-soft-purple transition-colors">Contato</a>
           </div>
           
           <p className="text-sm font-medium text-slate-400">

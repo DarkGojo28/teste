@@ -11,16 +11,20 @@ export const FAQ = () => {
       a: "O acesso é imediato! Assim que seu pagamento for confirmado, você receberá um e-mail com o link para download do ebook e todos os bônus exclusivos em formato PDF, compatível com qualquer dispositivo."
     },
     {
-      q: "O método funciona para quem tem insônia há anos?",
-      a: "Sim! O Somnia foi desenvolvido para atacar a causa biológica que mantém o cérebro em estado de alerta, mesmo em casos crônicos. Ele foca no que a medicina tradicional muitas vezes ignora."
+      q: "É físico ou digital?",
+      a: "O Somnia é um produto 100% digital. Isso significa que você não paga frete e recebe o acesso instantaneamente no seu e-mail para começar a ler agora mesmo."
     },
     {
       q: "E se eu não gostar do conteúdo?",
       a: "Você tem 7 dias de garantia incondicional. Se por qualquer motivo você sentir que o Somnia não é para você, basta nos enviar um e-mail e devolveremos 100% do seu investimento, sem perguntas."
     },
     {
-      q: "Preciso comprar algum medicamento ou suplemento?",
+      q: "Preciso comprar algum medicamento ou suplemento caro?",
       a: "Não. O foco do Somnia é o reequilíbrio natural do seu corpo. Embora mencionemos alguns aliados naturais pouco conhecidos, o segredo está no protocolo de comportamento e ambiente."
+    },
+    {
+      q: "É seguro comprar aqui?",
+      a: "Sim! Utilizamos as plataformas de pagamento mais seguras do Brasil, com criptografia de ponta a ponta. Seus dados estão protegidos e sua compra é garantida."
     }
   ];
 

@@ -24,18 +24,17 @@ export const Hero = () => {
               Somnia — Sono, Energia e Disposição
             </div>
             <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] mb-6 text-white">
-              O guia para quem <br />
-              <span className="text-gold">dormiu mal</span> de mais.
+              ◐ Somnia — Sono, Energia e Disposição
             </h1>
-            <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-xl leading-relaxed">
-              Descubra por que você não descansa de verdade — e o que fazer a partir de hoje à noite.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-display font-medium text-slate-300 mb-10 max-w-xl leading-relaxed">
+              O guia para quem <span className="text-gold">dormiu mal demais</span>.
+            </h2>
             
             <div className="flex flex-col gap-6 mb-10">
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={scrollToOffer}
-                  className="bg-gold text-slate-900 px-8 py-4 rounded-full font-black text-lg hover:bg-amber-400 transition-all flex items-center justify-center gap-2 shadow-xl shadow-gold/20 group"
+                  className="bg-gold text-slate-900 px-8 py-4 rounded-full font-black text-lg shadow-[0_4px_14px_rgba(245,158,11,0.4)] transition-all hover:translate-y-[-2px] active:scale-95 flex items-center justify-center gap-2 group"
                 >
                   Quero descobrir o meu problema
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

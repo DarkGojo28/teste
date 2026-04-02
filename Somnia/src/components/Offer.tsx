@@ -85,7 +85,7 @@ export const Offer = () => {
                 <p className="text-slate-400 text-xs mt-2 font-bold uppercase tracking-widest">Pagamento único · Acesso imediato · Ebook + 2 bônus</p>
               </div>
 
-              <button className="w-full bg-conversion hover:bg-conversion/90 text-white font-black py-6 rounded-2xl text-xl shadow-xl shadow-conversion/20 transition-all hover:scale-[1.02] active:scale-95 mb-8 flex items-center justify-center gap-3">
+              <button className="w-full bg-gold hover:bg-amber-400 text-slate-900 font-black py-6 rounded-2xl text-xl shadow-[0_4px_14px_rgba(245,158,11,0.4)] transition-all hover:translate-y-[-2px] active:scale-95 mb-8 flex items-center justify-center gap-3">
                 Quero começar hoje à noite →
               </button>
 

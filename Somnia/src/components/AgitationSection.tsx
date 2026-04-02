@@ -10,32 +10,37 @@ export const AgitationSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="py-24 bg-soft-purple/5">
       <div className="max-w-4xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-slate-900 mb-4">
-            O sono ruim não fica dentro do quarto
+          <h2 className="text-3xl md:text-5xl font-display font-bold text-slate-900 mb-6">
+            O custo invisível de uma noite mal dormida
           </h2>
-          <div className="w-20 h-1.5 bg-soft-purple mx-auto rounded-full" />
+          <p className="text-slate-500 text-lg max-w-2xl mx-auto">
+            O sono ruim não fica apenas dentro do quarto. Ele transborda para todas as áreas da sua vida, cobrando um preço alto demais.
+          </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-8">
           {points.map((point, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, x: i % 2 === 0 ? -20 : 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="flex items-center gap-4 p-6 bg-white rounded-2xl shadow-sm border border-slate-100"
+              className="flex items-start gap-6 p-8 bg-white rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition-shadow"
             >
-              <div className="shrink-0">{point.icon}</div>
-              <p className="text-lg font-medium text-slate-700">{point.text}</p>
+              <div className="shrink-0 w-12 h-12 rounded-2xl bg-slate-50 flex items-center justify-center">{point.icon}</div>
+              <div>
+                <p className="text-xl font-bold text-slate-800 mb-2">{point.text}</p>
+                <p className="text-slate-500 text-sm leading-relaxed">Impacto direto na sua qualidade de vida e longevidade.</p>
+              </div>
             </motion.div>
           ))}
         </div>
