@@ -16,7 +16,7 @@ const Footer = lazy(() => import('./components/Footer').then(m => ({ default: m.
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white text-slate-900 selection:bg-soft-purple/30 font-sans overflow-x-hidden">
+    <div className="min-h-screen bg-slate-950 text-slate-200 selection:bg-soft-purple/30 font-sans overflow-x-hidden">
       <main>
         <Hero />
         <Suspense fallback={<SectionLoader />}>

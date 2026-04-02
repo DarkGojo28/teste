@@ -24,7 +24,7 @@ const testimonials: Testimonial[] = [
 
 export const Testimonials = () => {
   return (
-    <section id="testimonials" className="bg-transparent py-24 relative overflow-hidden">
+    <section id="testimonials" className="bg-slate-950 py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -10,7 +10,7 @@ export const AgitationSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-soft-purple/5">
+    <section className="py-24 bg-slate-900/50">
       <div className="max-w-4xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -18,10 +18,10 @@ export const AgitationSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-slate-900 mb-6">
+          <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
             O custo invisível de uma noite mal dormida
           </h2>
-          <p className="text-slate-500 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             O sono ruim não fica apenas dentro do quarto. Ele transborda para todas as áreas da sua vida, cobrando um preço alto demais.
           </p>
         </motion.div>
@@ -34,12 +34,12 @@ export const AgitationSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="flex items-start gap-6 p-8 bg-white rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition-shadow"
+              className="flex items-start gap-6 p-8 bg-white/5 rounded-[2rem] shadow-sm border border-white/10 hover:border-soft-purple/30 transition-all"
             >
-              <div className="shrink-0 w-12 h-12 rounded-2xl bg-slate-50 flex items-center justify-center">{point.icon}</div>
+              <div className="shrink-0 w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center">{point.icon}</div>
               <div>
-                <p className="text-xl font-bold text-slate-800 mb-2">{point.text}</p>
-                <p className="text-slate-500 text-sm leading-relaxed">Impacto direto na sua qualidade de vida e longevidade.</p>
+                <p className="text-xl font-bold text-white mb-2">{point.text}</p>
+                <p className="text-slate-400 text-sm leading-relaxed">Impacto direto na sua qualidade de vida e longevidade.</p>
               </div>
             </motion.div>
           ))}

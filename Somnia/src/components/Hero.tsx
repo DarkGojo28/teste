@@ -7,7 +7,7 @@ export const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-gradient-to-br from-night-blue via-[#1E1B4B] to-soft-purple/20">
+    <section id="hero" className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-gradient-to-br from-slate-950 via-[#1E1B4B] to-soft-purple/20">
       {/* Background Elements */}
       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-soft-purple/20 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-gold/10 blur-[120px] rounded-full pointer-events-none" />
@@ -135,7 +135,7 @@ export const Hero = () => {
         </div>
       </div>
       
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-950 to-transparent" />
     </section>
   );
 };

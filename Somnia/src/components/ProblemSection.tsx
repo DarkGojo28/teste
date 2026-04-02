@@ -12,7 +12,7 @@ export const ProblemSection = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-[#080A0F]">
+    <section id="about" className="py-24 bg-slate-950">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-6 text-white">Eu sei exatamente como é...</h2>

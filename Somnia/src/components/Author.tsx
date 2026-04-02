@@ -9,7 +9,7 @@ export const Author = () => {
   ];
 
   return (
-    <section id="author" className="py-24 relative overflow-hidden bg-slate-50">
+    <section id="author" className="py-24 relative overflow-hidden bg-slate-900/50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -18,7 +18,7 @@ export const Author = () => {
             viewport={{ once: true }}
             className="relative flex justify-center"
           >
-            <div className="relative z-10 w-64 h-64 md:w-96 md:h-96 rounded-[3rem] bg-slate-900 flex items-center justify-center border-4 border-gold/30 shadow-[0_0_50px_rgba(245,158,11,0.1)]">
+            <div className="relative z-10 w-64 h-64 md:w-96 md:h-96 rounded-[3rem] bg-slate-950 flex items-center justify-center border-4 border-gold/30 shadow-[0_0_50px_rgba(245,158,11,0.1)]">
               <CheckCircle className="w-32 h-32 text-gold opacity-20" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-gold font-display font-bold text-4xl opacity-40">SOMNIA</span>
@@ -26,7 +26,7 @@ export const Author = () => {
             </div>
             
             {/* Badge Overlay */}
-            <div className="absolute -bottom-4 bg-gold text-night-blue font-black px-8 py-3 rounded-full uppercase tracking-widest text-xs shadow-xl z-20">
+            <div className="absolute -bottom-4 bg-gold text-slate-900 font-black px-8 py-3 rounded-full uppercase tracking-widest text-xs shadow-xl z-20">
               O autor — Somnia
             </div>
 
@@ -41,8 +41,8 @@ export const Author = () => {
             className="text-center lg:text-left"
           >
             <span className="text-soft-purple font-bold uppercase tracking-[0.3em] text-xs mb-4 block">Escrito por quem viveu o problema</span>
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 text-slate-900">O autor — Somnia</h2>
-            <div className="text-slate-600 text-lg leading-relaxed mb-10 space-y-6">
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 text-white">O autor — Somnia</h2>
+            <div className="text-slate-400 text-lg leading-relaxed mb-10 space-y-6">
               <p>
                 <strong>Escrito por quem viveu o problema — não por quem só estudou o assunto.</strong>
               </p>
@@ -56,11 +56,11 @@ export const Author = () => {
 
             <div className="grid gap-4 mb-12">
               {badges.map((b, i) => (
-                <div key={i} className="flex items-center gap-4 bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:border-gold/40 transition-all group">
+                <div key={i} className="flex items-center gap-4 bg-white/5 p-5 rounded-2xl border border-white/10 shadow-sm hover:border-gold/40 transition-all group">
                   <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
                     {b.icon}
                   </div>
-                  <span className="font-bold text-slate-700 tracking-wide text-sm md:text-base">{b.text}</span>
+                  <span className="font-bold text-slate-300 tracking-wide text-sm md:text-base">{b.text}</span>
                 </div>
               ))}
             </div>

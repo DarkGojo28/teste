@@ -8,7 +8,7 @@ export const Offer = () => {
   ];
 
   return (
-    <section id="offer" className="py-24 relative overflow-hidden">
+    <section id="offer" className="py-24 relative overflow-hidden bg-slate-950">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <motion.div
@@ -74,13 +74,13 @@ export const Offer = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-[3rem] p-10 text-night-blue shadow-[0_0_50px_rgba(242,125,38,0.2)] border-4 border-conversion/20"
+              className="bg-slate-900 rounded-[3rem] p-10 text-white shadow-[0_0_50px_rgba(242,125,38,0.1)] border-4 border-white/10"
             >
               <div className="text-center mb-8">
                 <span className="text-slate-500 text-sm font-bold uppercase tracking-widest line-through">De R$ 67,00</span>
                 <div className="flex items-center justify-center gap-2 mt-2">
                   <span className="text-2xl font-bold">Por apenas</span>
-                  <span className="text-6xl font-black text-conversion tracking-tighter">R$ 37</span>
+                  <span className="text-6xl font-black text-gold tracking-tighter">R$ 37</span>
                 </div>
                 <p className="text-slate-400 text-xs mt-2 font-bold uppercase tracking-widest">Pagamento único · Acesso imediato · Ebook + 2 bônus</p>
               </div>
@@ -89,30 +89,30 @@ export const Offer = () => {
                 Quero começar hoje à noite →
               </button>
 
-              <div className="space-y-4 border-t border-slate-100 pt-8">
-                <div className="flex items-center gap-3 text-slate-600 text-sm font-medium">
-                  <ShieldCheck className="w-5 h-5 text-conversion" />
+              <div className="space-y-4 border-t border-white/10 pt-8">
+                <div className="flex items-center gap-3 text-slate-300 text-sm font-medium">
+                  <ShieldCheck className="w-5 h-5 text-gold" />
                   <span>Garantia incondicional de 7 dias</span>
                 </div>
-                <div className="flex items-center gap-3 text-slate-600 text-sm font-medium">
-                  <Lock className="w-5 h-5 text-conversion" />
+                <div className="flex items-center gap-3 text-slate-300 text-sm font-medium">
+                  <Lock className="w-5 h-5 text-gold" />
                   <span>Pagamento 100% seguro e criptografado</span>
                 </div>
-                <div className="flex items-center gap-3 text-slate-600 text-sm font-medium">
-                  <CreditCard className="w-5 h-5 text-conversion" />
+                <div className="flex items-center gap-3 text-slate-300 text-sm font-medium">
+                  <CreditCard className="w-5 h-5 text-gold" />
                   <span>Acesso imediato após a confirmação</span>
                 </div>
               </div>
 
               <div className="mt-8 flex flex-col items-center gap-4">
-                <div className="flex justify-center gap-4 opacity-40 grayscale hover:grayscale-0 transition-all">
+                <div className="flex justify-center gap-4 opacity-40 grayscale hover:grayscale-0 transition-all invert">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" className="h-4" />
                   <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" className="h-6" />
                   <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" className="h-5" />
                   <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_Pay_logo.svg" alt="Apple Pay" className="h-5" />
                   <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg" alt="Google Pay" className="h-5" />
                 </div>
-                <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest flex items-center gap-2">
+                <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest flex items-center gap-2">
                   <Lock className="w-3 h-3" /> Compra 100% Segura • Dados Criptografados
                 </p>
               </div>

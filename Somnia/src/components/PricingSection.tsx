@@ -7,13 +7,13 @@ export const PricingSection = () => {
   };
 
   return (
-    <section id="pricing" className="py-24 bg-white relative overflow-hidden">
+    <section id="pricing" className="py-24 bg-slate-950 relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="bg-slate-900 rounded-[3rem] p-10 md:p-20 text-center shadow-2xl relative overflow-hidden"
+          className="bg-slate-900 rounded-[3rem] p-10 md:p-20 text-center shadow-2xl relative overflow-hidden border border-white/10"
         >
           {/* Background Glow */}
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-soft-purple/20 to-gold/10 pointer-events-none" />
@@ -28,7 +28,7 @@ export const PricingSection = () => {
               <span className="text-slate-500 text-xl font-bold uppercase tracking-widest line-through mb-2 block">De R$ 67,00</span>
               <div className="flex items-center justify-center gap-3">
                 <span className="text-3xl font-bold text-white">Por apenas</span>
-                <span className="text-7xl md:text-8xl font-black text-conversion tracking-tighter">R$ 37</span>
+                <span className="text-7xl md:text-8xl font-black text-gold tracking-tighter">R$ 37</span>
               </div>
               <p className="text-slate-400 text-sm mt-4 font-bold uppercase tracking-widest">Pagamento único · Acesso imediato</p>
             </div>
@@ -57,7 +57,7 @@ export const PricingSection = () => {
 
             <div className="p-8 bg-white/5 rounded-3xl border border-white/10">
               <div className="flex items-center justify-center gap-4 mb-4">
-                <ShieldCheck className="w-10 h-10 text-conversion" />
+                <ShieldCheck className="w-10 h-10 text-gold" />
                 <h4 className="text-2xl font-bold text-white">Garantia Incondicional</h4>
               </div>
               <p className="text-slate-400 leading-relaxed">

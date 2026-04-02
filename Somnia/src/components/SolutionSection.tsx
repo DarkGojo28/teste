@@ -12,7 +12,7 @@ export const SolutionSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-slate-950">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <motion.div
@@ -24,10 +24,10 @@ export const SolutionSection = () => {
             <Sparkles className="w-3 h-3" />
             O QUE MUDA COM SOMNIA
           </motion.div>
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-slate-900 mb-6">
+          <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
             Um guia que começa pelo seu diagnóstico — não por dicas genéricas
           </h2>
-          <p className="text-slate-500 max-w-2xl mx-auto text-lg">
+          <p className="text-slate-400 max-w-2xl mx-auto text-lg">
             E ainda: o hábito 'saudável' que provavelmente está sabotando sua noite.
           </p>
         </div>
@@ -40,13 +40,13 @@ export const SolutionSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 flex flex-col items-center text-center group hover:bg-white hover:shadow-xl hover:border-soft-purple/20 transition-all"
+              className="p-10 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center text-center group hover:bg-white/[0.08] hover:border-soft-purple/30 transition-all"
             >
-              <div className="w-20 h-20 rounded-3xl bg-white flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform">
+              <div className="w-20 h-20 rounded-3xl bg-white/5 flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform">
                 {card.icon}
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">{card.title}</h3>
-              <p className="text-slate-500 leading-relaxed">{card.desc}</p>
+              <h3 className="text-2xl font-bold text-white mb-4">{card.title}</h3>
+              <p className="text-slate-400 leading-relaxed">{card.desc}</p>
             </motion.div>
           ))}
         </div>
