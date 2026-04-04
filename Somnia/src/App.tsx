@@ -7,7 +7,7 @@ const ProblemSection = lazy(() => import('./components/ProblemSection').then(m =
 const AgitationSection = lazy(() => import('./components/AgitationSection').then(m => ({ default: m.AgitationSection })));
 const SolutionSection = lazy(() => import('./components/SolutionSection').then(m => ({ default: m.SolutionSection })));
 const Testimonials = lazy(() => import('./components/Testimonials').then(m => ({ default: m.Testimonials })));
-const Author = lazy(() => import('./components/Author').then(m => ({ default: m.Author })));
+const OriginSection = lazy(() => import('./components/OriginSection').then(m => ({ default: m.OriginSection })));
 const Offer = lazy(() => import('./components/Offer').then(m => ({ default: m.Offer })));
 const BenefitsSection = lazy(() => import('./components/BenefitsSection').then(m => ({ default: m.BenefitsSection })));
 const PricingSection = lazy(() => import('./components/PricingSection').then(m => ({ default: m.PricingSection })));
@@ -24,7 +24,7 @@ export default function App() {
           <AgitationSection />
           <SolutionSection />
           <Testimonials />
-          <Author />
+          <OriginSection />
           <Offer />
           <BenefitsSection />
           <PricingSection />
